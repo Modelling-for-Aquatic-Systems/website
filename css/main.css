@@ -1,0 +1,16 @@
+/* ============================================
+   Main Stylesheet - Marilaure Grégoire Website
+   ============================================
+
+   This file imports all CSS modules in the
+   correct order for proper cascading.
+   ============================================ */
+
+/* 1. Variables - CSS custom properties */
+@import './variables.css';
+
+/* 2. Layout - Base structure and grid */
+@import './layout.css';
+
+/* 3. Components - Reusable UI elements */
+@import './components.css';

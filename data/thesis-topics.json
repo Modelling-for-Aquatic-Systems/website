@@ -1,0 +1,85 @@
+{
+  "topics": [
+    {
+      "id": "topic_001",
+      "title": "Latent Diffusion Models for Ocean Emulation",
+      "description": "Numerical ocean models simulate complex biogeochemical and physical processes but are computationally expensive. In our group, we have been developing deep learning emulators for the Black Sea based on diffusion models operating directly in pixel space, with promising initial results. This project will explore whether latent diffusion models (LDMs) can improve upon this approach. By first learning a compressed latent representation of the ocean state through an autoencoder, and then training a diffusion model in this latent space, we expect to achieve higher quality emulations at reduced computational cost. The project will involve designing and training the autoencoder and latent diffusion components, and comparing the results against our existing pixel-space diffusion baseline.",
+      "skills": [
+        "Deep Learning",
+        "Diffusion Models",
+        "Python/PyTorch",
+        "Ocean Modeling",
+        "Autoencoders"
+      ],
+      "context": "Part of ongoing research on AI-based ocean emulators in the MAST group. Related to EU projects on marine forecasting.",
+      "supervisors": ["Marilaure Grégoire", "Gilles Louppe"],
+      "duration": "1 year",
+      "level": "Master 2"
+    },
+    {
+      "id": "topic_002",
+      "title": "Realistic Observation Models for Diffusion-Based Ocean Inverse Problems",
+      "description": "Our group has developed diffusion models for solving inverse problems in ocean state reconstruction, where observations y are related to the true state x through a forward model p(y|x). Currently, we approximate this observation process as p(y|x) = N(A(x) + μₛ, Σₛ), where A is a linear downsampling operator and Σₛ assumes independent observational errors. While this simplified model has shown promising results, it does not fully capture the complexity of real satellite observations. This project will investigate more realistic observation models to improve the quality of ocean state reconstructions. The work will explore two main directions: (i) designing non-linear transformations A that better represent the physical processes involved in satellite measurements, (ii) developing more accurate noise models by estimating spatially-correlated covariance matrices Σₛ that capture the dependencies between observations. The project will involve implementing these improved observation models and integrating them into our diffusion-based inference framework, and evaluating their impact on reconstruction accuracy using real satellite data.",
+      "skills": [
+        "Inverse Problems",
+        "Bayesian Inference",
+        "Data Assimilation",
+        "Statistical Modeling",
+        "Python",
+        "Remote Sensing"
+      ],
+      "context": "Part of research on data assimilation and ocean state estimation in the MAST group. Applications to satellite oceanography.",
+      "supervisors": ["Marilaure Grégoire", "Victor Mangeleer"],
+      "duration": "1 year",
+      "level": "Master 2"
+    },
+    {
+      "id": "topic_003",
+      "title": "Machine Learning for Ocean Deoxygenation Prediction",
+      "description": "Ocean deoxygenation is one of the major consequences of climate change, with significant impacts on marine ecosystems and fisheries. This project aims to develop machine learning models to predict future oxygen concentrations in marine waters based on physical and biogeochemical variables. Using historical data from the Black Sea and global ocean databases, you will train neural networks or other ML algorithms to identify patterns and drivers of deoxygenation. The project will compare ML predictions with traditional biogeochemical models and explore the interpretability of the learned relationships.",
+      "skills": [
+        "Machine Learning",
+        "Time Series Analysis",
+        "Python/R",
+        "Oceanography",
+        "Data Analysis"
+      ],
+      "context": "Related to EU projects on ocean deoxygenation (GO2NE) and marine ecosystem monitoring.",
+      "supervisors": ["Marilaure Grégoire"],
+      "duration": "1 year",
+      "level": "Master 2"
+    },
+    {
+      "id": "topic_004",
+      "title": "Data Assimilation for Coastal Ocean Biogeochemistry",
+      "description": "Coastal oceans are highly dynamic environments where biogeochemical processes are influenced by river inputs, atmospheric deposition, and anthropogenic activities. This project will develop and test data assimilation techniques to improve the simulation of nutrient cycles (nitrogen, phosphorus) in a coastal ocean model. You will implement ensemble-based methods (e.g., EnKF) or variational techniques to integrate satellite observations (chlorophyll, sea surface temperature) and in-situ measurements into a 3D coupled physical-biogeochemical model. The focus will be on quantifying uncertainties and improving short-term forecasting capabilities.",
+      "skills": [
+        "Data Assimilation",
+        "Numerical Modeling",
+        "Biogeochemistry",
+        "Python/Fortran",
+        "Statistical Methods"
+      ],
+      "context": "Applications to Belgian coastal waters or Mediterranean Sea. Part of operational oceanography research.",
+      "supervisors": ["Marilaure Grégoire", "Luc Vandenbulcke"],
+      "duration": "1 year",
+      "level": "Master 2"
+    },
+    {
+      "id": "topic_005",
+      "title": "Ecosystem Response to Multiple Stressors: A Modeling Study",
+      "description": "Marine ecosystems face multiple simultaneous stressors including warming, acidification, eutrophication, and deoxygenation. This project will use ecosystem models to investigate how these stressors interact and affect key ecosystem properties such as primary production, species composition, and biogeochemical cycles. You will perform sensitivity analyses and scenario simulations to identify critical thresholds and potential regime shifts. The study can focus on a specific region (e.g., North Sea, Black Sea) or compare responses across different marine environments.",
+      "skills": [
+        "Ecosystem Modeling",
+        "Biogeochemistry",
+        "Sensitivity Analysis",
+        "Scientific Programming",
+        "Systems Thinking"
+      ],
+      "context": "Relevant to climate change impact studies and marine policy (IPCC, OSPAR, EU Marine Strategy Framework Directive).",
+      "supervisors": ["Marilaure Grégoire"],
+      "duration": "1 year",
+      "level": "Master 2"
+    }
+  ]
+}

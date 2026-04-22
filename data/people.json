@@ -1,0 +1,156 @@
+{
+  "current": {
+    "postdocs": [
+      {
+        "name": "Luc Vandenbulcke",
+        "photo": "luc_vandenbulcke.png",
+        "role": "Senior Researcher",
+        "methods": ["Numerical Modeling"],
+        "themes": ["Ocean Dynamics"],
+        "email": "l.vandenbulcke@uliege.be",
+        "website": "https://orbi.uliege.be/profile?uid=p004007"
+      },
+      {
+        "name": "Polina Verezemskaya",
+        "photo": "polina_verezemskaya.jpeg",
+        "role": "Postdoctoral Researcher",
+        "methods": ["Statistical Analysis"],
+        "themes": ["Marine Biogeochemistry"],
+        "email": "polina.verezemskaya@uliege.be",
+        "website": "https://orbi.uliege.be/profile?uid=p286794"
+      },
+      {
+      "name": "Haolin Yu",
+      "photo": "haolin.jpg",
+      "role": "Postdoctoral Researcher",
+      "methods": ["Fish Modeling"],
+      "themes": ["High-trophic-level Modeling"],
+      "email": "hyu@uliege.be",
+      "website": "https://haolinfishmodeling.github.io/"
+      },
+      {
+        "name": "Fédérica Adobbati",
+        "photo": "federica_adobbati.jpg",
+        "role": "Postdoctoral Researcher",
+        "methods": ["Data Assimilation"],
+        "themes": ["Biogeochemistry"],
+        "email": "federica.adobbati@uliege.be",
+        "website": "https://feadobbati.github.io/"
+      },
+      {
+        "name": "Jean-François Grailet",
+        "photo": "jean_françois.png",
+        "role": "Postdoctoral Researcher",
+        "methods": ["Numerical Modeling"],
+        "themes": ["Marine Ecosystems"],
+        "email": "jf.grailet@uliege.be",
+        "website": "https://orbi.uliege.be/profile?uid=p089770"
+      }
+    ],
+    "phd_students": [
+      {
+        "name": "Séverine Chevalier",
+        "photo": "severine_chevalier.png",
+        "role": "PhD Student",
+        "methods": ["Data Assimilation"],
+        "themes": ["Biogeochemistry"],
+        "email": "severine.chevalier@uliege.be",
+        "website": "https://orbi.uliege.be/ph-search?uid=u234941"
+      },
+      {
+        "name": "Victor Mangeleer",
+        "photo": "victor_mangeleer.png",
+        "role": "PhD Student",
+        "methods": ["Machine Learning"],
+        "themes": ["Ocean Emulation"],
+        "email": "victor.mangeleer@uliege.be",
+        "website": "https://vikvador.github.io"
+      },
+      {
+        "name": "Mathurin Choblet",
+        "photo": "mathurin_choblet.png",
+        "role": "PhD Student",
+        "methods": ["Numerical Modeling"],
+        "themes": ["Marine Ecosystems"],
+        "email": "mathurin.choblet@uliege.be",
+        "website": "https://mchoblet.github.io"
+      },
+      {
+        "name": "Ilya Drozd",
+        "photo": "ilya_drozd.jpg",
+        "role": "PhD Student",
+        "methods": ["Numerical Modeling"],
+        "themes": ["Ocean Dynamics"],
+        "email": "ilya.drozd@uliege.be",
+        "website": "https://scholar.google.com/citations?user=oLqwFHQAAAAJ&hl=en"
+      },
+      {
+        "name": "Riana Ny Randresihaja",
+        "photo": "riana_nyrandresihaja.png",
+        "role": "PhD Student",
+        "methods": ["Numerical Modeling"],
+        "themes": ["Biogeochemistry"],
+        "email": "rny@uliege.be",
+        "website": "https://orbi.uliege.be/profile?uid=p247573"
+      },
+      {
+        "name": "Lev Malcev",
+        "photo": "lev_malcev.jpg",
+        "role": "Project Manager",
+        "methods": ["Numerical Modeling"],
+        "themes": ["Ocean Modeling"],
+        "email": "Lev.Malcev@uliege.be",
+        "website": "https://orbi.uliege.be/profile?uid=p214633"
+      }
+    ]
+  },
+  "alumni": [
+    {
+      "name": "Evgeny Ivanov",
+      "photo": "evgeny_ivanov.jpg",
+      "role": "Postdoctoral Researcher",
+      "methods": ["Numerical Modeling"],
+      "themes": ["Ocean Circulation"],
+      "email": "evgeny.ivanov@uliege.be",
+      "website": "https://orbi.uliege.be/profile?uid=p197917"
+    },
+    {
+      "name": "Lauranne Alaerts",
+      "photo": "lauranne_alaerts.png",
+      "role": "PhD",
+      "methods": ["Numerical Modeling"],
+      "themes": ["Ocean Deoxygenation"],
+      "email": "lauranne.alaerts@uliege.be",
+      "website": "https://orbi.uliege.be/ph-search?uid=u237453"
+    },
+    {
+      "name": "Loïc Macé",
+      "photo": "loic_mace.png",
+      "role": "PhD",
+      "methods": ["Numerical Modeling"],
+      "themes": ["Coastal Oceanography"],
+      "email": "loic.mace@uliege.be",
+      "website": "https://orbi.uliege.be/profile?uid=p248252"
+    }
+  ],
+  "master_students": [
+    {
+      "name": "Mae Dany-Fort",
+      "photo": "dummy.png",
+      "thesis": "Biogeochemical impacts of Marine Heatwaves in the Black Sea : A Modeling Approach",
+      "thesis_url": "https://matheo.uliege.be/handle/2268.2/23922"
+    },
+    {
+      "name": "Ylenia Reuter",
+      "photo": "dummy.png",
+      "thesis": "Lagrangian modeling of microplastic fate and transport in the Black Sea",
+      "thesis_url": "https://matheo.uliege.be/handle/2268.2/23921"
+    },
+    {
+      "name": "Mboppa Penda Oriana Berthe",
+      "photo": "oriana.png",
+      "thesis": "Analysis of trends and patterns of surface chlorophyll-a in the Black Sea",
+      "thesis_url": ""
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+/* ============================================
+   Components - Marilaure Grégoire Website
+   ============================================
+
+   Reusable components: cards, tags, buttons,
+   and other UI elements.
+   ============================================ */
+
+/* ===== Person Card — horizontal layout (photo left, content right) ===== */
+
+.person-card {
+  background-color: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.person-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--ocean-light);
+}
+
+.person-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gray-100);
+  flex-shrink: 0;
+  transition: border-color var(--transition-base);
+}
+
+.person-card:hover .person-photo {
+  border-color: var(--ocean-blue);
+}
+
+/* Right-side content container */
+.person-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Header row: name+role on left, link icons on right */
+.person-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.person-name-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.person-name {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--gray-900);
+  margin-top: 0;       /* override global h3 margin-top */
+  margin-bottom: 0;
+  line-height: var(--leading-tight);
+}
+
+.person-role {
+  font-size: var(--text-xs);
+  color: var(--gray-600);
+  margin-bottom: 0;
+  margin-top: 0.15rem;
+  line-height: var(--leading-normal);
+}
+
+.person-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin-top: var(--space-sm);
+}
+
+.person-links {
+  display: flex;
+  gap: 0.2rem;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.person-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--gray-50);
+  color: var(--gray-600);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  flex-shrink: 0;
+}
+
+.person-links a:hover {
+  background-color: var(--gray-900);
+  color: var(--white);
+}
+
+/* Alumni and grad card variant */
+.person-card.alumni,
+.person-card.grad {
+  background-color: var(--gray-50);
+  border-color: var(--gray-200);
+}
+
+/* Master Student badge */
+.master-badge {
+  font-size: 0.65rem;
+  color: #005F5F;
+  border: 1px solid var(--ocean-teal);
+  border-radius: var(--radius-full);
+  padding: 0.1rem 0.5rem;
+  font-weight: var(--font-medium);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Placeholder when no photo is available */
+.person-photo-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--gray-100);
+  background-color: var(--gray-100);
+  color: var(--gray-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Alumni badge */
+.alumni-badge {
+  font-size: 0.65rem;
+  color: #9A7209;
+  border: 1px solid #D4AF37;
+  border-radius: var(--radius-full);
+  padding: 0.1rem 0.5rem;
+  font-weight: var(--font-medium);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ===== Tags ===== */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-full);
+  font-size: 0.65rem;
+  font-weight: var(--font-medium);
+  line-height: 1.4;
+  white-space: nowrap;
+  transition: transform var(--transition-fast);
+}
+
+.tag:hover {
+  transform: translateY(-1px);
+}
+
+/* Method tags (blue) */
+.tag-method {
+  background-color: var(--ocean-blue);
+  color: var(--white);
+}
+
+/* Theme tags (teal) */
+.tag-theme {
+  background-color: var(--ocean-teal);
+  color: var(--white);
+}
+
+/* ===== News Item — horizontal layout (date left, content right) ===== */
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  border-left: 3px solid var(--ocean-blue);
+  margin-bottom: var(--space-md);
+  background-color: var(--gray-50);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.news-item:hover {
+  background-color: var(--white);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+/* Stretched link covers the whole card */
+.news-stretched-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: var(--radius-md);
+}
+
+.news-item--link {
+  cursor: pointer;
+}
+
+/* Date column — left, fixed width, right-aligned */
+.news-date {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+  font-weight: var(--font-medium);
+  min-width: 90px;
+  text-align: right;
+  flex-shrink: 0;
+  line-height: var(--leading-tight);
+}
+
+/* Content column — right */
+.news-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.news-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--ocean-blue);
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  line-height: var(--leading-tight);
+}
+
+.news-excerpt {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  line-height: var(--leading-relaxed);
+  margin-bottom: 0;
+}
+
+/* News heading — capital, no bold */
+#news h2 {
+  font-weight: var(--font-normal);
+}
+
+/* On small screens: stack date above content */
+@media (max-width: 600px) {
+  .news-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+
+  .news-date {
+    text-align: left;
+    min-width: unset;
+  }
+}
+
+/* ===== Publication Card — news-item style ===== */
+
+.publication {
+  padding: var(--space-md) var(--space-lg);
+  border-left: 3px solid var(--ocean-blue);
+  margin-bottom: var(--space-md);
+  background-color: var(--gray-50);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.publication:hover {
+  background-color: var(--white);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.pub-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--ocean-blue);
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  line-height: var(--leading-tight);
+}
+
+.pub-title a {
+  color: var(--ocean-blue);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.pub-title a:hover {
+  color: var(--ocean-dark);
+}
+
+.pub-authors {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  margin-bottom: 0.2rem;
+  line-height: var(--leading-relaxed);
+}
+
+.pub-authors strong {
+  color: var(--ocean-dark);
+  font-weight: var(--font-semibold);
+}
+
+.pub-venue {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* ===== Year Group ===== */
+
+.year-group {
+  margin-bottom: var(--space-2xl);
+}
+
+.year-heading {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--ocean-dark);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--ocean-blue);
+}
+
+/* ===== Hero Section ===== */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-md) 0;
+  margin-bottom: var(--space-3xl);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    gap: var(--space-3xl);
+    align-items: flex-start;
+    padding: var(--space-2xl) 0;
+  }
+}
+
+/* Mobile: hide link labels, show icons only */
+@media (max-width: 767px) {
+  .link-label {
+    display: none;
+  }
+
+  .hero-links a {
+    padding: var(--space-sm);
+  }
+}
+
+.hero-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--ocean-blue);   /* matches .name-first color */
+  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-normal);
+  color: var(--gray-900);
+  margin-bottom: var(--space-xs);
+  line-height: var(--leading-tight);
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: var(--text-4xl);
+  }
+}
+
+/* "Marilaure" in primary color + bold */
+.name-first {
+  color: var(--ocean-blue);
+  font-weight: var(--font-bold);
+}
+
+.hero-subtitle {
+  font-size: var(--text-base);
+  color: var(--gray-600);
+  font-weight: var(--font-normal);
+  margin-bottom: var(--space-md);
+  line-height: var(--leading-normal);
+}
+
+.hero-bio {
+  font-size: var(--text-base);
+  color: var(--gray-700);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-lg);
+  text-align: justify;
+}
+
+.topic-highlight {
+  color: var(--ocean-blue);
+  font-weight: var(--font-semibold);
+}
+
+.hero-links {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hero-links {
+    justify-content: flex-start;
+  }
+}
+
+.hero-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--gray-50);
+  border-radius: var(--radius-md);
+  color: var(--gray-900);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+}
+
+.hero-links a:hover {
+  background-color: var(--gray-900);
+  color: var(--white);
+  border-color: var(--gray-900);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ===== Search & Filter Controls ===== */
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+  padding: var(--space-lg);
+  background-color: var(--gray-50);
+  border-radius: var(--radius-lg);
+}
+
+@media (min-width: 768px) {
+  .controls {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.controls input[type="search"],
+.controls select {
+  flex: 1;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  transition: border-color var(--transition-base);
+}
+
+.controls input[type="search"]:focus,
+.controls select:focus {
+  outline: none;
+  border-color: var(--ocean-blue);
+  box-shadow: 0 0 0 3px rgba(0, 119, 190, 0.1);
+}
+
+/* Publication stats inside controls bar */
+#pub-stats {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ===== Alumni separator ===== */
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--gray-200);
+  margin: var(--space-2xl) 0;
+}
+
+/* ===== Thesis Topic Card — news-item style ===== */
+
+.thesis-card {
+  position: relative;
+  background-color: var(--gray-50);
+  border-left: 3px solid var(--ocean-blue);
+  padding: var(--space-lg) var(--space-xl);
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.thesis-card:hover {
+  background-color: var(--white);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.thesis-title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--ocean-blue);
+  margin-bottom: var(--space-md);
+}
+
+.thesis-description {
+  font-size: var(--text-base);
+  color: var(--gray-700);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-md);
+  text-align: justify;
+}
+
+/* Topic number indicator (#1, #2, …) */
+.thesis-number {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--ocean-blue);
+  font-family: monospace;
+  letter-spacing: 0.05em;
+}
+
+/* Contacts section (names only, no email) */
+.thesis-contacts {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--gray-100);
+}
+
+/* ===== Course Item ===== */
+
+/* Wrapper anchor for clickable course card */
+.course-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-link:hover,
+.course-link:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-item {
+  background-color: var(--gray-50);
+  border-left: 3px solid var(--ocean-blue);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.course-item:hover,
+.course-link:hover .course-item {
+  background-color: var(--white);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.course-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.course-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--ocean-blue);
+  margin: 0;
+}
+
+.course-meta {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}
+
+.course-description {
+  font-size: var(--text-base);
+  color: var(--gray-700);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-sm);
+}
+

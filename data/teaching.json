@@ -1,0 +1,128 @@
+{
+  "courses": [
+    {
+      "title": "Modeling dynamical biological systems",
+      "code": "BIOL0030-1",
+      "url": "https://www.programmes.uliege.be/cocoon/20252026/en/cours/BIOL0030-1.html",
+      "level": "Master",
+      "ects": 3,
+      "language": "English",
+      "description": "Introduction to dynamical modelling of biological and ecological systems: modelling philosophy, mass-balance equations, predator–prey and competition models, and implementation/analysis of simple models in R.",
+      "topics": [
+        "Dynamical modelling",
+        "Ecological models",
+        "Mass-balance equations",
+        "Predator–prey systems",
+        "R implementation"
+      ]
+    },
+    {
+      "title": "Mathematical analysis and modelling methods applied to the environment",
+      "code": "OCEA0014-1",
+      "url": "https://www.programmes.uliege.be/cocoon/cours/OCEA0014-1.html",
+      "level": "Master",
+      "ects": 4,
+      "language": "English",
+      "description": "Mathematical tools for analysing and modelling physical, chemical and biological environmental processes, including calculus refresher, dimensional analysis, ODE models, stability analysis and interacting population models.",
+      "topics": [
+        "Mathematical analysis",
+        "Dimensional analysis",
+        "Ordinary differential equations",
+        "Stability analysis",
+        "Environmental modelling"
+      ]
+    },
+    {
+      "title": "Marine Ecology",
+      "code": "OCEA0057-7",
+      "url": "https://www.programmes.uliege.be/cocoon/cours/OCEA0057-7.html",
+      "level": "Master",
+      "ects": 6,
+      "language": "English",
+      "description": "Integrated course combining marine ecology, an introduction to marine ecosystem modelling and a residential field trip; I contribute to the modelling component focused on simple conceptual and numerical ecosystem models.",
+      "topics": [
+        "Marine ecology",
+        "Ecosystem modelling",
+        "Population and community dynamics",
+        "Fieldwork"
+      ]
+    },
+    {
+      "title": "Introduction to marine ecosystems modelling",
+      "code": "OCEA0089-1",
+      "url": "https://www.programmes.uliege.be/cocoon/cours/OCEA0089-1.html",
+      "level": "Master",
+      "ects": 3,
+      "language": "English",
+      "description": "Conceptualisation, parameterisation and implementation of mathematical models of marine biogeochemical and ecological processes, with emphasis on simple 0D/1D models and hands-on numerical exercises.",
+      "topics": [
+        "Marine biogeochemical processes",
+        "Ecosystem models",
+        "Model calibration and validation",
+        "Phase-plane analysis",
+        "0D/1D numerical simulations"
+      ]
+    },
+    {
+      "title": "Dynamique des Écosystèmes Marins",
+      "code": "OCEA0090-1",
+      "url": "https://www.programmes.uliege.be/cocoon/cours/OCEA0090-1.html",
+      "level": "Master",
+      "ects": 4,
+      "language": "French",
+      "description": "Étude de la dynamique des écosystèmes marins à travers la modélisation mathématique et l’analyse des interactions entre composantes physiques, chimiques et biologiques de l’océan.",
+      "topics": [
+        "Dynamique des populations marines",
+        "Couplage physique–biogéochimie",
+        "Structures frontales et upwellings",
+        "Variabilité spatio-temporelle"
+      ]
+    },
+    {
+      "title": "Modélisation des Écosystèmes et des Cycles Biogéochimiques",
+      "code": "OCEA0096-1",
+      "url": "https://www.programmes.uliege.be/cocoon/cours/OCEA0096-1.html",
+      "level": "Master",
+      "ects": 3,
+      "language": "French",
+      "description": "Modélisation avancée des cycles biogéochimiques marins (carbone, azote, oxygène) et de leur couplage avec les réseaux trophiques, à l’aide de modèles numériques 0D à 3D.",
+      "topics": [
+        "Cycles biogéochimiques marins",
+        "Modèles écosystémiques",
+        "Couplage physique–biogéochimie",
+        "Modèles numériques 3D"
+      ]
+    },
+    {
+      "title": "Analyse Statistique des Données Océanographiques",
+      "code": "OCEA0224-1",
+      "url": "https://www.programmes.uliege.be/cocoon/cours/OCEA0224-1.html",
+      "level": "Master",
+      "ects": 3,
+      "language": "French",
+      "description": "Méthodes statistiques pour traiter des séries temporelles et données spatiales en océanographie, incluant analyses exploratoires, ajustement de modèles, assimilation de données et méthodes inverses sur ordinateur.",
+      "topics": [
+        "Séries temporelles océanographiques",
+        "Statistique spatiale",
+        "Assimilation de données",
+        "Méthodes inverses"
+      ]
+    },
+    {
+      "title": "Mathematical analysis and modelling methods applied to the environment / Introduction to marine ecosystems modelling",
+      "code": "OCEA0229-1",
+      "url": "https://www.programmes.uliege.be/cocoon/cours/OCEA0229-1.html",
+      "level": "Master",
+      "ects": 6,
+      "language": "English",
+      "description": "Combined unit introducing mathematical analysis for environmental problems and marine ecosystem modelling, with R-based exercises on dynamical systems, dimensional analysis and simple marine biogeochemical models.",
+      "topics": [
+        "Mathematical analysis",
+        "Dimensional analysis",
+        "Dynamical systems",
+        "R practicals",
+        "Marine ecosystem models"
+      ]
+    }
+  ]
+}

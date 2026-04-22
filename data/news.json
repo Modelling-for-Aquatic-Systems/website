@@ -1,0 +1,38 @@
+{
+  "news": [
+    {
+      "date": "2026-02-23",
+      "title": "Ocean Sciences Meeting 2026",
+      "content": "Several members of our team were selected for oral talks and poster presentations at the Ocean Sciences Meeting 2026 !",
+      "link": "https://www.agu.org/ocean-sciences-meeting",
+      "type": "conference"
+    },
+    {
+      "date": "2025-12-10",
+      "title": "PhD Defense of Lauranne Alaerts",
+      "content": "Lauranne Alaerts successfully defended her PhD thesis on the modeling of ocean deoxygenation processes.",
+      "link": "https://orbi.uliege.be/handle/2268/338742",
+      "type": "award"
+    },
+    {
+      "date": "2025-10-29",
+      "title": "PhD Defense of Loïc Macé",
+      "content": "Loïc Macé successfully defended his PhD thesis on coastal ocean biogeochemistry and ecosystem modeling.",
+      "link": "https://orbi.uliege.be/handle/2268/336360",
+      "type": "award"
+    },
+    {
+      "date": "2024-03-15",
+      "title": "Talk at the Liège Digital Café",
+      "content": "I presented our work on how to better understand and predict ocean evolution under climate change.",
+      "link": "https://www.facebook.com/CafeNlg/posts/1027714132726489/",
+      "type": "talk"
+    },
+    {
+      "date": "2023-01-01",
+      "title": "Promotion to Full Professor",
+      "content": "I have been promoted to Full Professor (Professeure ordinaire) at the University of Liège.",
+      "type": "award"
+    }
+  ]
+}
